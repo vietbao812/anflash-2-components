@@ -5,20 +5,22 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        @foreach(json_decode($articles) as $article)
-        <div class="swiper-slide" style="background-image: url({{$article->thumbnail}});">
+        <?php $__currentLoopData = json_decode($articles); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $article): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <div class="swiper-slide" style="background-image: url(<?php echo e($article->thumbnail); ?>);">
             <div class="c010f8beca6bb4a64b99ce748ea5d2a5d__box">
                 <a href="#">
                     <h3>
-                        {!!$article->title!!}
+                        <?php echo $article->title; ?>
+
                     </h3>
                     <p>
-                        {!! $article->content !!}
+                        <?php echo $article->content; ?>
+
                     </p>
                 </a>
             </div>
         </div>
-        @endforeach
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
     <div class="swiper-pagination"></div>
     <!-- If we need pagination -->
@@ -28,4 +30,4 @@
 </div>
     <!-- Write your code here -->
 </div>
-<script src="/main.js"></script>
+<script src="/main.js"></script><?php /**PATH /home/lethanhnhan/project/component-php/anflash-2-components/HomeSlider - Le Thanh Nhan/src/HomeSlider/index.blade.php ENDPATH**/ ?>
