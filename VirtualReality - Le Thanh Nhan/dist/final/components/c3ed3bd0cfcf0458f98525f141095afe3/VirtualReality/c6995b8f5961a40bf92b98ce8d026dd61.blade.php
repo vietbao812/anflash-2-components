@@ -15,9 +15,7 @@
             </a>
         </div>
         <div class="c3ed3bd0cfcf0458f98525f141095afe3__bottom">
-            <iframe src="{{$content->thumbnail}}" frameborder="0">
-
-            </iframe>
+            <iframe src="{{$content->thumbnail}}" frameborder="0"></iframe>
         </div>
     </div>
     <!-- Write your code here -->
