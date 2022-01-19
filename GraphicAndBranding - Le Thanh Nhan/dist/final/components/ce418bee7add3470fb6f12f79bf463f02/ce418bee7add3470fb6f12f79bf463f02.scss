@@ -2,6 +2,7 @@
     // Write your code here
     $text-black: #333;
     $text-hover: #f9d37d;
+    $text-hover-button: #fff;
     $bg-button: #f9d37d;
 
 
@@ -79,7 +80,7 @@
         padding: 10px 15px;
         transition: 0.2s;
         &:hover{
-            color: $text-hover;
+            color: $text-hover-button;
         }
     }
 
@@ -131,9 +132,6 @@
         &__item{
             padding: 20px 0;
         }
-        &__button{
-            padding: 20px;
-        }
         &__contact{
             text-align: center;
             p{
@@ -144,10 +142,15 @@
     }
 
     @media screen and (max-width: 400px) {
-        &__right{
-            &__items{
-                grid-template-columns: 1fr;
-            }
+        &__items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+        
+        &__item{
+            padding: 5px 0;
         }
     }
     // Write your code here
