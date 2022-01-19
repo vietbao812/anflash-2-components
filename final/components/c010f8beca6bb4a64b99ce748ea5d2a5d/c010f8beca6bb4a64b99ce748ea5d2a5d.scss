@@ -1,0 +1,129 @@
+@import url('/node_modules/bootstrap/dist/css/bootstrap.css');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+.c010f8beca6bb4a64b99ce748ea5d2a5d{
+    // Write your code here
+    $primaryColor: #f6f6f6;
+    $secondColor: #f9d37d;
+    $textColor: #333;
+    @media (min-width: 1200px){
+        .container {
+            max-width: 1170px;
+        }
+    }
+    .swiper{
+        width: 100%;
+        height: 667px;
+        &-wrapper{
+            max-height: 520px;
+            position: unset;
+        }
+        &-slide{
+            position: unset;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            width: fit-content;
+            left: 25px;
+        }
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+            width: 6px;
+            height: 6px;
+            margin: 0 16px;
+            transition: 0.2s;
+            &:hover{
+                opacity: unset;
+            }
+        }
+        .swiper-pagination-bullet-active{
+            background: black;
+        }
+    }
+    
+    &__box{
+        position: absolute;
+        bottom:-147px;
+        height: 190px;
+        width: 70%;
+        padding: 35px;
+        background-color: $primaryColor;
+        p{
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        a{
+            text-decoration: none;
+            color: $textColor;
+            transition: 0.2s;
+            &:hover{
+                color: $secondColor;
+                i{
+                    color: white;
+                }
+            }
+        }
+    }
+    &__profile{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-decoration: none;
+        color: $textColor;
+        height: 190px;
+        padding: 35px 50px;
+        font-size: 30px;
+        background-color: $secondColor;
+        transition: 0.2s;
+        &:hover{
+            color: white;
+        }
+    }
+    // Write your code here
+}
+
+@media screen and (max-width: 1199px) {
+    .c010f8beca6bb4a64b99ce748ea5d2a5d{
+        .swiper{
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+                width: 100%;
+                left: unset;
+                bottom: 23px;
+            }
+            &-slide{
+                background-position: center;
+            }
+        }
+        &__box{
+            width: 100%;
+            height: 40%;
+            bottom: -100px;
+        }
+        &__profile{
+            height: fit-content;
+            bottom: unset;
+            top: 0;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .c010f8beca6bb4a64b99ce748ea5d2a5d{
+        .swiper{
+            height: 570px;
+        }
+        &__box{
+            bottom: 0;
+        }
+        &__profile{
+            height: fit-content;
+            bottom: unset;
+            top: 0;
+            padding: 10px;
+        }
+    }
+}
