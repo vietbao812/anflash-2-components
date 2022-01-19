@@ -1,7 +1,7 @@
 .ce418bee7add3470fb6f12f79bf463f02{
     // Write your code here
     $text-black: #333;
-    $text-hover: #f9d37d;
+    $text-hover: #fff;
     $bg-button: #f9d37d;
 
 
@@ -131,9 +131,6 @@
         &__item{
             padding: 20px 0;
         }
-        &__button{
-            padding: 20px;
-        }
         &__contact{
             text-align: center;
             p{
@@ -144,10 +141,15 @@
     }
 
     @media screen and (max-width: 400px) {
-        &__right{
-            &__items{
-                grid-template-columns: 1fr;
-            }
+        &__items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+        
+        &__item{
+            padding: 5px 0;
         }
     }
     // Write your code here
