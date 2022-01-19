@@ -10,10 +10,10 @@
             <p>{!! $content->content !!}</p>
             <div class="ce418bee7add3470fb6f12f79bf463f02__items">
                 @foreach($items as $item)
-                    <a class="ce418bee7add3470fb6f12f79bf463f02__item" href="{{$item->alias}}"><i class="fas fa-caret-right"></i>{{$item->title}}</a>
+                    <a class="ce418bee7add3470fb6f12f79bf463f02__item" href="{{route('article', ['alias' => $item->alias])}}"><i class="fas fa-caret-right"></i>{{$item->title}}</a>
                 @endforeach
             </div>
-            <a href="{{$content->alias}}" class="ce418bee7add3470fb6f12f79bf463f02__button">
+            <a href="{{route('article', ['alias' => $content->alias])}}" class="ce418bee7add3470fb6f12f79bf463f02__button">
                 Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
             </a>
             <div class="ce418bee7add3470fb6f12f79bf463f02__contact">

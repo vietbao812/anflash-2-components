@@ -10,10 +10,10 @@
             <p><?php echo $content->content; ?></p>
             <div class="ce418bee7add3470fb6f12f79bf463f02__items">
                 <?php $__currentLoopData = $items; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <a class="ce418bee7add3470fb6f12f79bf463f02__item" href="<?php echo e($item->alias); ?>"><i class="fas fa-caret-right"></i><?php echo e($item->title); ?></a>
+                    <a class="ce418bee7add3470fb6f12f79bf463f02__item" href="<?php echo e(route('article', ['alias' => $item->alias])); ?>"><i class="fas fa-caret-right"></i><?php echo e($item->title); ?></a>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div>
-            <a href="<?php echo e($content->alias); ?>" class="ce418bee7add3470fb6f12f79bf463f02__button">
+            <a href="<?php echo e(route('article', ['alias' => $content->alias])); ?>" class="ce418bee7add3470fb6f12f79bf463f02__button">
                 Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
             </a>
             <div class="ce418bee7add3470fb6f12f79bf463f02__contact">
