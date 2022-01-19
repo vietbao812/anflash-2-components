@@ -23,7 +23,7 @@
     <div class="swiper-pagination"></div>
     <!-- If we need pagination -->
     <a href="#" class="c010f8beca6bb4a64b99ce748ea5d2a5d__profile">
-        Download Profile
+        Download Profile  <i class="fas fa-cloud-download-alt"></i>
     </a>
 </div>
     <!-- Write your code here -->

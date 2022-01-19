@@ -1,14 +1,15 @@
 @import url('/node_modules/bootstrap/dist/css/bootstrap.css');
-@media (min-width: 1200px){
-    .container {
-        max-width: 1170px;
-    }
-}
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 .c010f8beca6bb4a64b99ce748ea5d2a5d{
+    // Write your code here
     $primaryColor: #f6f6f6;
     $secondColor: #f9d37d;
     $textColor: #333;
-    // Write your code here
+    @media (min-width: 1200px){
+        .container {
+            max-width: 1170px;
+        }
+    }
     .swiper{
         width: 100%;
         height: 667px;
@@ -19,7 +20,7 @@
         &-slide{
             position: unset;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-position: center;
         }
         .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
@@ -49,7 +50,7 @@
         background-color: $primaryColor;
         p{
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -60,6 +61,9 @@
             transition: 0.2s;
             &:hover{
                 color: $secondColor;
+                i{
+                    color: white;
+                }
             }
         }
     }
@@ -90,7 +94,7 @@
                 bottom: 23px;
             }
             &-slide{
-                background-position: top;
+                background-position: center;
             }
         }
         &__box{
