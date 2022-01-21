@@ -1,1 +1,0 @@
-<h1>This is how you create a view controller</h1><?php /**PATH /home/lethanhnhan/project/component-php/anflash-2-components/DesignAndApplication/sample/index.blade.php ENDPATH**/ ?>
