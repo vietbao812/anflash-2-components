@@ -17,6 +17,9 @@ Router::group(['exceptionHandler' => \Demo\Handlers\CustomExceptionHandler::clas
 	// Web
 	// Router::get('/', 'DefaultController@index')->setName('index');
 	Router::get('/media', 'DefaultController@media')->setName('media');
+	Router::get('/vr', 'DefaultController@virtualreality')->setName('vr');
+	Router::get('/design', 'DefaultController@designandapplication')->setName('designandapplication');
+	Router::get('/branding', 'DefaultController@graphicandbranding')->setName('branding');
 	// Routes
 	$routes = json_decode(file_get_contents('https://tunacoding.com/api/routes'));
 	foreach($routes as $name=>$route){
