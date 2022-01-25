@@ -12,7 +12,7 @@ Router::group(['exceptionHandler' => \Demo\Handlers\CustomExceptionHandler::clas
     // API
 	Router::group(['prefix' => '/api', 'middleware' => \Demo\Middlewares\ApiVerification::class], function () {
 		$apis = [
-			"homecontact" => "Src\\HomeContact\\HomeContact@api",
+			"footer" => "Src\\Footer\\Footer@api",
 		];
 		foreach($apis as $path=>$controller){
 			Router::get($path, $controller);	
@@ -20,7 +20,7 @@ Router::group(['exceptionHandler' => \Demo\Handlers\CustomExceptionHandler::clas
 	});
 	// Web
 	$routes = [
-		"homecontact" => "Src\\HomeContact\\HomeContact@index",
+		"footer" => "Src\\Footer\\Footer@index",
 	];
 	foreach($routes as $path=>$controller){
 		Router::get($path, $controller);
