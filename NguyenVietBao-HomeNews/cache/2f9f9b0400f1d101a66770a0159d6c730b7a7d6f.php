@@ -40,13 +40,14 @@
         </div>
     </div>
 
-    <!-- <h1>{{ $greetings }}</h1>
-    @foreach ($articles as $article)
-        <div>{{$article->title}}</div>
-    @endforeach
+    <!-- <h1><?php echo e($greetings); ?></h1>
+    <?php $__currentLoopData = $articles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $article): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <div><?php echo e($article->title); ?></div>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     <h1>1111</h1>
-    <div style="width: 100px; height: 100px; background-color: {{$variables["left-background-color"]}};"></div> -->
+    <div style="width: 100px; height: 100px; background-color: <?php echo e($variables["left-background-color"]); ?>;"></div> -->
 
     <!-- Write your code here -->
 </div>
 <script src="/main.js"></script>
+<?php /**PATH D:\ANFLASH\anflash-2-components\NguyenVietBao-HomeNews\src\HomeNews/index.blade.php ENDPATH**/ ?>
