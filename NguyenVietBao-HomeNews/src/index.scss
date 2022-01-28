@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+$bg-button: #f9d37d;
+$text-black: #5a5a5a;
+
 * {
     margin: 0;
     padding: 0;
@@ -48,13 +51,44 @@ a {
         }
         .right {
             width: 50%;
-            height: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            padding: 70px 0 35px;
+            justify-content: space-around;
+            align-items: flex-start;
+            color: #5a5a5a;
+            // padding: 70px 0 35px;
             .right-item {     
-                // padding: 0px 0 0px 110px;
+                padding: 0px 0 0px 110px;
+                .title {
+                    font-weight: 600;
+                }
+                h3 {
+                    margin: 10px 0;
+                }
+                .title, h3 a {
+                    color: $text-black;
+                    transition: color 0.15s ease;
+                    &:hover {
+                        color: $bg-button;
+                    }
+                }
+                .description {
+                    margin-bottom: 10px;
+                }
+                .see-more {
+                    color: $bg-button;
+                    font-weight: 600;
+                }
+            }
+            .btn-see-more {
+                display: block;
+                margin-left: 110px;
+                padding: 20px 50px;
+                background: $bg-button;
+                font-size: 18px;
+                font-weight: 600;
+                color: #5a5a5a;
             }
         }
     }
