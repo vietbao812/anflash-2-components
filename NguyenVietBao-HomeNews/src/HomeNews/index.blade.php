@@ -12,6 +12,7 @@
             <div class="left-content">
                 <div class="left-title">
                     <a href="">Thiết kế web và ứng dụng</a>
+                    <span class="day">11 - 09 - 2019</span>
                 </div>
                 <h3><a class="title-name" href="">Doanh thu của bạn sẽ tăng nếu bạn có 1 website bán hàng riêng cho mình</a></h3>
                 <p class="description">Trong thời đại của Internet, mọi người có xu hướng tìm kiếm trực tuyến để tìm sản phẩm hoặc dịch vụ trước khi mua . Nếu bạn có 1 website bán hàng online, bạn sẽ tiếp cận được nhiều khách hàng mục tiềm năng hơn, đồng nghĩa với việc doanh thu bán hàng sẽ tăng, tạo lợi thế cạnh tranh với đối thủ cùng phân khúc trên thị trường.</p>
@@ -20,20 +21,23 @@
         <div class="right">
             <div class="right-item">
                 <a class="title" href="">Thiết kế web và ứng dụng</a>
+                <span class="day">09 - 09 - 2019</span>
                 <h3><a class="title-name" href="">Lý do bạn nên chọn dịch vụ và thiết kế website của Anflash</a></h3>
                 <p class="description">Bạn đang có mong muốn tìm kiếm một công ty dịch vụ thiết kế web chuyên nghiệp và đáng tin cậy. Chúng tôi, Anflash cung cấp</p>
                     <a class="see-more" href="">Xem thêm</a>
             </div>
             <div class="right-item">
                 <a class="title" href="">Thiết kế web và ứng dụng</a>
-                <h3><a class="title-name" href="">Lý do bạn nên chọn dịch vụ và thiết kế website của Anflash</a></h3>
-                <p class="description">Bạn đang có mong muốn tìm kiếm một công ty dịch vụ thiết kế web chuyên nghiệp và đáng tin cậy. Chúng tôi, Anflash cung cấp</p>
+                <span class="day">08 - 09 - 2019</span>
+                <h3><a class="title-name" href="">Bí quyết giữ chân khách hàng trên website lâu hơn.</a></h3>
+                <p class="description">Cho đến 2019, website bán hàng trực tuyến dần trở thành cuộc chạy đua, cạnh tranh khốc liệt giữa</p>
                 <a class="see-more" href="">Xem thêm</a>
             </div>
             <div class="right-item">
                 <a class="title" href="">Thiết kế web và ứng dụng</a>
-                <h3><a class="title-name" href="">Lý do bạn nên chọn dịch vụ và thiết kế website của Anflash</a></h3>
-                <p class="description">Bạn đang có mong muốn tìm kiếm một công ty dịch vụ thiết kế web chuyên nghiệp và đáng tin cậy. Chúng tôi, Anflash cung cấp</p>
+                <span class="day">08 - 09 - 2019</span>
+                <h3><a class="title-name" href="">Bí quyết giữu chân khách hàng trên website lâu hơn</a></h3>
+                <p class="description">Cho đến 2019, website bán hàng trực tuyến dần trở thành cuộc chạy đua, cạnh tranh khốc liệt giữa</p>
                 <a class="see-more" href="">Xem thêm</a>
             </div>
             

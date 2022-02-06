@@ -47,6 +47,11 @@ a {
   font-size: 18px;
   font-weight: 700;
 }
+.ceac9064ab6e54dd58dd62b4c3dcf324a .container .left .left-content .left-title .day {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #fff;
+}
 .ceac9064ab6e54dd58dd62b4c3dcf324a .container .left .left-content h3 {
   margin-bottom: 30px;
   font-size: 20px;
@@ -68,6 +73,11 @@ a {
 }
 .ceac9064ab6e54dd58dd62b4c3dcf324a .container .right .right-item .title {
   font-weight: 600;
+}
+.ceac9064ab6e54dd58dd62b4c3dcf324a .container .right .right-item .day {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #535353;
 }
 .ceac9064ab6e54dd58dd62b4c3dcf324a .container .right .right-item h3 {
   margin: 10px 0;
