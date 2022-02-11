@@ -33,7 +33,7 @@ class HomeNews
 		$blade = new Blade([__DIR__.'/../../src/HomeNews'], __DIR__.'/../../cache');
 
 		echo $blade->make('index', [
-            'greetings' => 'Hello World!',
+            'greetings' => 'THIẾT KẾ WEB VÀ ỨNG DỤNG',
             'articles' => $articles,
             'variables' => $this->variables,
         ])->render();

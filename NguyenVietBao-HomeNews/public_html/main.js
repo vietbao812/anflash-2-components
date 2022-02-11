@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\r\n// Write your code here\r\nconsole.log(\"Hello World!\");\r\n// Write your code here\r\n\n\n//# sourceURL=webpack://@tunanyugen/component-maker/./src/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\r\n// Write your code here\r\n// console.log(\"Hello World!\");\r\nfetch('https://tunacoding.com/api/articles?&relations[]=user&relations[]=tags&page=1&title=&tag_ids[]=3&=&=&excluded_tag_ids[]=&=&=&order_by=&=&order_by_direction=desc&=Gi%E1%BA%A3m%20d%E1%BA%A7n')\r\n    .then(function (res) { return res.json(); })\r\n    .then(function (data) { return console.log(data); });\r\n// Write your code here\r\n\n\n//# sourceURL=webpack://@tunanyugen/component-maker/./src/index.tsx?");
 
 /***/ })
 
