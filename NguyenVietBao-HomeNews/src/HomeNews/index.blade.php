@@ -6,43 +6,47 @@
         <div class="left">
             <div class="left-image">
                 <a href="">
-                    <img src="https://anflash.com/upload/news/doanh-thu-cua-ban-se-tang-neu-ban-co-1-website-ban-hang-rieng-cho-minh1568215567.jpg" alt="">
+                    <img src="{{$articles[1] -> thumbnail}}" alt="">
                 </a>          
             </div>
             <div class="left-content">
                 <div class="left-title">
                     <a href="">{{$greetings}}</a>
-                    <span class="day">11 - 09 - 2019</span>
+                    <span class="day">
+                    <?php
+                        echo substr($articles[0] -> created_at, 0, 10)
+                    ?>
+                </span>
                 </div>
 
-                <h3><a class="title-name" href="">Doanh thu của bạn sẽ tăng nếu bạn có 1 website bán hàng riêng cho mình</a></h3>
-                @foreach ($articles as $article)
-                    <p class="description">{{$article -> title}}</p>
-                @endforeach
+                <h3><a class="title-name" href="">{{$articles[0]->title}}</a></h3>
+                <p class="description">
+                    <?php 
+                        echo substr($articles[0] -> content, 0, 499)
+                    ?>
+                </p>
+                
             </div>
         </div>
         <div class="right">
+            @foreach($articles as $article)
             <div class="right-item">
                 <a class="title" href="">{{$greetings}}</a>
-                <span class="day">09 - 09 - 2019</span>
-                <h3><a class="title-name" href="">Lý do bạn nên chọn dịch vụ và thiết kế website của Anflash</a></h3>
-                <p class="description">Bạn đang có mong muốn tìm kiếm một công ty dịch vụ thiết kế web chuyên nghiệp và đáng tin cậy. Chúng tôi, Anflash cung cấp</p>
-                    <a class="see-more" href="">Xem thêm</a>
+                <span class="day">
+                    <?php
+                        echo substr($article -> created_at, 0, 10)
+                    ?>
+                </span>
+                <h3><a class="title-name" href="">{{$article -> title}}</a></h3>
+                <p class="description">
+                    <?php 
+                        echo substr($article -> content, 0, 299)
+                    ?>
+                </p>
+                <a class="see-more" href="{{route('/demo-routes//articles', ['alias' => $article->alias])}}">Xem thêm</a>
             </div>
-            <div class="right-item">
-                <a class="title" href="">{{$greetings}}</a>
-                <span class="day">08 - 09 - 2019</span>
-                <h3><a class="title-name" href="">Bí quyết giữ chân khách hàng trên website lâu hơn.</a></h3>
-                <p class="description">Cho đến 2019, website bán hàng trực tuyến dần trở thành cuộc chạy đua, cạnh tranh khốc liệt giữa</p>
-                <a class="see-more" href="">Xem thêm</a>
-            </div>
-            <div class="right-item">
-                <a class="title" href="">{{$greetings}}</a>
-                <span class="day">08 - 09 - 2019</span>
-                <h3><a class="title-name" href="">Bí quyết giữu chân khách hàng trên website lâu hơn</a></h3>
-                <p class="description">Cho đến 2019, website bán hàng trực tuyến dần trở thành cuộc chạy đua, cạnh tranh khốc liệt giữa</p>
-                <a class="see-more" href="">Xem thêm</a>
-            </div>
+            @endforeach
+            
             
             <a class="btn-see-more" href="">Xem thêm tin khác</a>
         </div>

@@ -56,8 +56,14 @@ a {
   margin-bottom: 30px;
   font-size: 20px;
 }
-.ceac9064ab6e54dd58dd62b4c3dcf324a .container .left .left-content p {
+.ceac9064ab6e54dd58dd62b4c3dcf324a .container .left .left-content .description {
   line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .ceac9064ab6e54dd58dd62b4c3dcf324a .container .right {
   width: 50%;
@@ -91,10 +97,19 @@ a {
 }
 .ceac9064ab6e54dd58dd62b4c3dcf324a .container .right .right-item .description {
   margin-bottom: 10px;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .ceac9064ab6e54dd58dd62b4c3dcf324a .container .right .right-item .see-more {
   color: #f9d37d;
   font-weight: 600;
+  margin-top: 10px;
+  display: block;
 }
 .ceac9064ab6e54dd58dd62b4c3dcf324a .container .right .btn-see-more {
   display: block;
